@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (isset($_SESSION['id'])) {
+	header('Location: dashboard.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +25,7 @@
 		<p tabindex="0" style="margin-bottom: 10px;">Already have an account?</p>
 		<a class="option" href="index.php">Login <i class="fa-solid fa-right-long"></i></a>
 	</div>
+	<?php include('partials/footer.php') ?>
 </body>
 
 </html>

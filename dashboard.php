@@ -38,7 +38,7 @@ if (!isset($_SESSION['id']) && !isset($_SESSION['username']) && !isset($_SESSION
 			</div>
 		</div>
 	</div>
-	<script src="scripts/app.js"></script>
+	<?php include('partials/footer.php') ?>
 </body>
 
 </html>

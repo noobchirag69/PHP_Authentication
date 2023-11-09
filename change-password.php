@@ -23,6 +23,7 @@ if (!isset($_SESSION['id']) && !isset($_SESSION['username']) && !isset($_SESSION
 		</form>
 		<a class="option" href="dashboard.php"><i class="fa-solid fa-left-long"></i> Back to Dashboard</a>
 	</div>
+	<?php include('partials/footer.php') ?>
 </body>
 
 </html>

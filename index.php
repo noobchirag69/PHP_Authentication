@@ -27,6 +27,7 @@ if (isset($_SESSION['id'])) {
 		<p tabindex="0" style="margin-bottom: 10px;">Don't have an account?</p>
 		<a class="option" href="register.php">Sign Up <i class="fa-solid fa-right-long"></i></a>
 	</div>
+	<?php include('partials/footer.php') ?>
 </body>
 
 </html>

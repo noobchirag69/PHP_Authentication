@@ -21,6 +21,7 @@ if (isset($_SESSION['id'])) {
 		</form>
 		<a class="option" href="index.php"><i class="fa-solid fa-left-long"></i> Back to Login Page</a>
 	</div>
+	<?php include('partials/footer.php') ?>
 </body>
 
 </html>
