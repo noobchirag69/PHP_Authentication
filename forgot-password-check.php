@@ -42,13 +42,13 @@ if (isset($_POST['forgot'])) {
       $mail->IsSMTP();
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
-      $mail->Username = 'testchirag1969@gmail.com';
-      $mail->Password = 'ijhgayhddrfceagl';
+      $mail->Username = ''; // Your Email Address
+      $mail->Password = ''; // App Password of your Email Address
       $mail->SMTPSecure = 'ssl';
       $mail->Port = 465;
       $mail->SMTPDebug = 3;
       $mail->SMTPOptions = array('ssl' => array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true));
-      $mail->SetFrom('testchirag1969@gmail.com');
+      $mail->SetFrom(''); // Your desired Email Address that will be used as the sender
       $mail->AddAddress($row['loginemail']);
       $mail->CharSet = 'UTF-8';
       $mail->Subject = 'Temporary Password for Login to Dashboard System';
