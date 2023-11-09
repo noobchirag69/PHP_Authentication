@@ -37,7 +37,7 @@ if (isset($_POST['forgot'])) {
       // Generate random 8-digit Password with alphabets and numbers 
       $pass = bin2hex(openssl_random_pseudo_bytes(4));
 
-      // Mail the password to the vendor using PHPMailer
+      // Mail the password to the user using PHPMailer
       $mail = new PHPMailer(true);
       $mail->IsSMTP();
       $mail->Host = 'smtp.gmail.com';
