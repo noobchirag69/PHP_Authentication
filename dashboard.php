@@ -17,7 +17,6 @@ if (!isset($_SESSION['id']) && !isset($_SESSION['username']) && !isset($_SESSION
 		<h1 tabindex="0">Welcome to your Dashboard!</h1>
 		<div class="welcome-options">
 			<a class="option" href="logout.php" onclick="return confirm('Log out of the current session?');">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
-			<a class="option" href="change-password.php">Change Password <i class="fa-solid fa-circle-question"></i></a>
 		</div>
 		<div class="table-container">
 			<table tabindex="0">
@@ -31,7 +30,15 @@ if (!isset($_SESSION['id']) && !isset($_SESSION['username']) && !isset($_SESSION
 				</tr>
 			</table>
 		</div>
+		<div class="dropdown">
+			<button class="dropBtn">Profile Options <i class="fa-solid fa-plus"></i></button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="change-password.php">Change Password <i class="fa-solid fa-circle-question"></i></a>
+				<a href="#">Delete Account <i class="fa-solid fa-trash"></i></a>
+			</div>
+		</div>
 	</div>
+	<script src="scripts/app.js"></script>
 </body>
 
 </html>
