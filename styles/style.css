@@ -1,0 +1,137 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+/* Regular CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 1px;
+}
+
+p,
+a,
+span,
+label,
+input,
+textarea,
+button,
+strong,
+em,
+li,
+th,
+td {
+  font-family: "Roboto Mono", monospace;
+}
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #000;
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 50px;
+}
+
+.wrapper form {
+  margin: 20px 0;
+}
+
+.wrapper form input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.wrapper form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.wrapper .forgot {
+  margin-bottom: 10px;
+}
+
+.welcome {
+  max-width: 1200px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 50px;
+}
+
+.welcome-options {
+  margin: 20px 0;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table-container table {
+  border-collapse: collapse;
+}
+
+.table-container table td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+.table-container table td.heading {
+  background-color: buttonface;
+}
+
+.option {
+  background-color: buttonface;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .welcome {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .welcome {
+    border: none;
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper,
+  .welcome {
+    border: none;
+    padding: 10px;
+    margin: 20px auto;
+  }
+}
