@@ -1,6 +1,6 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
 
 /* Regular CSS */
 * {
@@ -59,7 +59,7 @@ td {
 
 .wrapper form label {
   color: red;
-  font-weight: bold;
+  font-weight: 500;
   display: block;
   margin-bottom: 7px;
 }
@@ -77,6 +77,16 @@ td {
   font-size: 16px;
   border: 1px solid #ccc;
   cursor: pointer;
+}
+
+.wrapper form button#delete {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+.wrapper form button#delete:hover {
+  background-color: rgb(235, 0, 0);
 }
 
 .wrapper form button:hover {
