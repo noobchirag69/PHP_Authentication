@@ -34,7 +34,7 @@ if (!isset($_SESSION['id']) && !isset($_SESSION['username']) && !isset($_SESSION
 			<button class="dropBtn">Profile Options <i class="fa-solid fa-plus"></i></button>
 			<div id="myDropdown" class="dropdown-content">
 				<a href="change-password.php">Change Password <i class="fa-solid fa-circle-question"></i></a>
-				<a href="#">Delete Account <i class="fa-solid fa-trash"></i></a>
+				<a href="delete-account.php">Delete Account <i class="fa-solid fa-trash"></i></a>
 			</div>
 		</div>
 	</div>

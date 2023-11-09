@@ -57,6 +57,13 @@ td {
   margin: 20px 0;
 }
 
+.wrapper form label {
+  color: red;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 7px;
+}
+
 .wrapper form input {
   width: 100%;
   padding: 10px 20px;
