@@ -13,10 +13,10 @@
 			<input type="email" placeholder="Email Address" name="loginemail" required />
 			<input type="password" placeholder="Password" name="password" required />
 			<input type="password" placeholder="Confirm Password" name="confirmPassword" required />
-			<button type="submit" name="register">Sign Up</button>
+			<button type="submit" name="register">Sign Up <i class="fa-solid fa-right-to-bracket"></i></button>
 		</form>
 		<p tabindex="0" style="margin-bottom: 10px;">Already have an account?</p>
-		<a class="option" href="index.php">Login</a>
+		<a class="option" href="index.php">Login <i class="fa-solid fa-right-long"></i></a>
 	</div>
 </body>
 

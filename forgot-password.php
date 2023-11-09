@@ -17,9 +17,9 @@ if (isset($_SESSION['id'])) {
 		<h1 tabindex="0">Forgot Password</h1>
 		<form action="forgot-password-check.php" method="POST">
 			<input type="email" placeholder="Email Address" name="loginemail" required />
-			<button type="submit" name="forgot">Submit</button>
+			<button type="submit" name="forgot">Submit <i class="fa-solid fa-paper-plane"></i></button>
 		</form>
-		<a class="option" href="index.php">Back to Login Page</a>
+		<a class="option" href="index.php"><i class="fa-solid fa-left-long"></i> Back to Login Page</a>
 	</div>
 </body>
 

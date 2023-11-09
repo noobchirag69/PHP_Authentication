@@ -18,14 +18,14 @@ if (isset($_SESSION['id'])) {
 		<form action="login-check.php" method="POST">
 			<input type="text" placeholder="Username" name="username" required />
 			<input type="password" placeholder="Password" name="password" required />
-			<button type="submit" name="login">Login</button>
+			<button type="submit" name="login">Login <i class="fa-solid fa-right-to-bracket"></i></button>
 		</form>
 		<div class="forgot">
-			<a class="option" href="forgot-password.php">Forgot Password</a>
+			<a class="option" href="forgot-password.php">Forgot Password <i class="fa-solid fa-circle-question"></i></a>
 		</div>
 		<br />
 		<p tabindex="0" style="margin-bottom: 10px;">Don't have an account?</p>
-		<a class="option" href="register.php">Sign Up</a>
+		<a class="option" href="register.php">Sign Up <i class="fa-solid fa-right-long"></i></a>
 	</div>
 </body>
 
