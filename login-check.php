@@ -20,13 +20,14 @@ if (isset($_POST['login'])) {
 	$password = md5($password);
 
 	// Fetching info from database
-	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `password`='$password'";
+	$sql = "SELECT * FROM `users` WHERE `username`='$username'";
 	$result = mysqli_query($conn, $sql);
 
 	// If found
 	if (mysqli_num_rows($result) === 1) {
 		$row = mysqli_fetch_assoc($result);
-		if ($row['username'] === $username && $row['password'] === $password) {
+		// Matching the Passwords
+		if ($row['password'] === $password) {
 			// Storing account info in session
 			$_SESSION['id'] = $row['id'];
 			$_SESSION['username'] = $row['username'];
@@ -37,7 +38,7 @@ if (isset($_POST['login'])) {
 				  </script>';
 		} else {
 			echo '<script>
-					alert("Incorrect Credentials!");
+					alert("Incorrect Password!");
 					window.location.replace("http://localhost/PHP_Authentication/");
 				  </script>';
 			exit();
