@@ -17,3 +17,11 @@ window.onclick = (event) => {
     }
   }
 };
+
+// Confirm Deletion
+function confirmDelete() {
+  let result = confirm(
+    "Account once deleted can't be recovered. Want to proceed?"
+  );
+  return result;
+}
