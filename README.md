@@ -7,6 +7,8 @@ To use this code:
 3. Import the database dump file (dashboard_panel.sql) inside that newly created database.
 4. You're good to go. Cheers!
 
+Note: Update the 'forgot-password-check.php' page in your localhost with your SMTP credentials. Or else. PHPMailer will fail and the password recovery won't work.
+
 If you find this helpful, please leave a star.
 
 Thank you!
